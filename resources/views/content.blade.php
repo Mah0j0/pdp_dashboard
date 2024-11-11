@@ -8,7 +8,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body">
+                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -31,7 +31,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body">
+                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -54,7 +54,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body">
+                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -77,7 +77,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body">
+                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -117,6 +117,9 @@
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                                         </svg>
+                                    </button>
+                                    <button class="inline-flex items-center text-white bg-purple-600 border border-purple-600 focus:outline-none hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-purple-700 dark:text-white dark:border-purple-700 dark:hover:bg-purple-800 dark:hover:border-purple-800 dark:focus:ring-purple-900" type="button">
+                                        Agregar reserva
                                     </button>
 
                                     <!-- Dropdown menu -->
