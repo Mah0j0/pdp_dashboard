@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePuestoTable extends Migration
+class CreateWorkRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreatePuestoTable extends Migration
      */
     public function up()
     {
-        Schema::create('puesto', function (Blueprint $table) {
-            $table->integer('idPuesto')->primary();
-            $table->string('nombre')->nullable();
-            $table->tinyInteger('estado')->nullable();
+        Schema::create('work_roles', function (Blueprint $table) {
+            $table->id()->primary();
+            $table->string('name')->nullable();
+            $table->tinyInteger('status')->default(1);
         });
     }
 
@@ -27,6 +27,6 @@ class CreatePuestoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('puesto');
+        Schema::dropIfExists('work_roles');
     }
 }
