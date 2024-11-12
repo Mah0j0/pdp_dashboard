@@ -27,7 +27,6 @@ class CreateCitiesTable extends Migration
             //fk para la tabla cities
             $table->foreignId('city_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
         });
-
     }
 
     /**
