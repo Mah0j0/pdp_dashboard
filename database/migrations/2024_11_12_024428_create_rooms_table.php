@@ -21,7 +21,7 @@ class CreateRoomsTable extends Migration
             //fk for room_types table
             $table->foreignId('room_type_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             //fk for statuses table
-            $table->foreignId('status_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('room_status_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
