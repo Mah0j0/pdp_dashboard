@@ -73,6 +73,8 @@
     @include('components.sidebar')
 
     <div class="p-4 sm:ml-64">
+        <h1>Bienvenido usuario</h1>
+        <p>Tu rol es: {{ $role_id }}</p>
         @include('content')
     </div>
 
