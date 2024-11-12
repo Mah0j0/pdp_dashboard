@@ -9,7 +9,6 @@ class Country extends Model
 {
     protected $table = 'countries';
     protected $fillable = ['name', 'status'];
-
     //has many cities
     public function cities():HasMany
     {

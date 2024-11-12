@@ -9,7 +9,6 @@ class RoomStatuses extends Model
 {
     protected $table = 'statuses';
     protected $fillable = ['name'];
-
     //has many rooms
     public function rooms():HasMany
     {

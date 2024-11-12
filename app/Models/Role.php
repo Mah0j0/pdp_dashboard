@@ -9,7 +9,6 @@ class Role extends Model
 {
     protected $table = 'roles';
     protected $fillable = ['name', 'status'];
-
     //has many users
     public function users():HasMany
     {

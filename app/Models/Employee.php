@@ -10,7 +10,6 @@ class Employee extends Model
 {
     protected $table = 'employees';
     protected $fillable = ['name', 'lastname', 'email', 'document', 'phone_number', 'status', 'employee_id', 'work_role_id'];
-
     //has one work role
     public function work_role(): BelongsTo
     {
@@ -26,5 +25,4 @@ class Employee extends Model
     {
         return $this->hasMany(Reservation::class);
     }
-
 }

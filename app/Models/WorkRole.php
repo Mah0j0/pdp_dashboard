@@ -9,7 +9,6 @@ class WorkRole extends Model
 {
     protected $table = 'work_roles';
     protected $fillable = ['name', 'status'];
-
     //has many employees
     public function employees(): HasMany
     {

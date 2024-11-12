@@ -10,7 +10,6 @@ class Room extends Model
 {
     protected $table = 'rooms';
     protected $fillable = ['name', 'number', 'price', 'status', 'room_type_id', 'status_id'];
-
     //has one room_type
     public function room_type(): BelongsTo
     {
