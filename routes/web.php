@@ -7,8 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/dashboard/{role_id}', function ($role_id) {
+    return view('dashboard', ['role_id' => $role_id]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
