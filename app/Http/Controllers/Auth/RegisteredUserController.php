@@ -50,7 +50,10 @@ class RegisteredUserController extends Controller
         event(new Registered($user)); 
 
         Auth::login($user);  
+        $role_id = $user->role_id; 
+        $user_name = $user->name;
+        $user_email = $user->email;
 
-        return redirect()->route('dashboard', ['role_id' => $user->role_id]);
+        return redirect()->route('dashboard', ['role_id' => $role_id, 'user_name' => $user_name, 'user_email' =>$user_email]);
     }
 }

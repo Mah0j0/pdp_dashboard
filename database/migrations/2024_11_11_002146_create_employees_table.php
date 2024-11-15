@@ -21,7 +21,6 @@ class CreateEmployeesTable extends Migration
             $table->integer('document')->nullable();
             $table->integer('phone_number')->nullable();
             $table->tinyInteger('status')->default(1);
-            $table->integer('idRol')->nullable();
             
             //fk para tabla work_roles
             $table->foreignId('work_role_id')->constrained()->onUpdate('cascade')->onDelete('cascade');

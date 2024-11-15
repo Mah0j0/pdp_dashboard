@@ -7,8 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard/{role_id}', function ($role_id) {
-    return view('dashboard', ['role_id' => $role_id]);
+Route::get('/dashboard/{role_id}/{user_name}/{user_email}', function ($role_id, $user_name, $user_email) {
+    return view('dashboard', ['role_id' => $role_id, 'user_name' => $user_name, 'user_email' => $user_email]);	
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
