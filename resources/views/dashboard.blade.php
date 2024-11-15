@@ -70,14 +70,12 @@
     </style> 
 </head>
 <body class="dark:bg-gray-900">
-    @include('components.nav', ['user_name' => $user_name, 'user_email' => $user_email])
-    @include('components.sidebar', ['role_id' => $role_id])
+    @include('components/nav', ['user_name' => $user_name, 'user_email' => $user_email])
+    @include('components/sidebar', ['role_id' => $role_id])
 
     <div class="p-4 sm:ml-64">
-        @include('content')
+        @include('content');
     </div>
-
-    
     <!-- Scripts -->
     <script src="./js/dark-mode-toggle"></script> 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
