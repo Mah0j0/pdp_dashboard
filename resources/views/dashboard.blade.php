@@ -74,7 +74,7 @@
     @include('components/sidebar', ['role_id' => $role_id])
 
     <div class="p-4 sm:ml-64">
-        @include('content');
+        @include('content')
     </div>
     <!-- Scripts -->
     <script src="./js/dark-mode-toggle"></script> 

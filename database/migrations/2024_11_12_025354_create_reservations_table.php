@@ -12,7 +12,7 @@ class CreateReservationsTable extends Migration
     public function up(): void
     {
         Schema::create('reservations', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->dateTime('checkin_date');
             $table->dateTime('checkout_date');
             $table->integer('adults_number');
