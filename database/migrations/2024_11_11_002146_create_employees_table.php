@@ -23,8 +23,6 @@ class CreateEmployeesTable extends Migration
             $table->tinyInteger('status')->default(1);
             $table->integer('idRol')->nullable();
             
-            //fk para tabla roles
-            $table->foreignId('employee_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             //fk para tabla work_roles
             $table->foreignId('work_role_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
 

@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->foreignId('role_id')->nullable()->constrained(
             table: 'roles', indexName: 'users_role_id');
+            $table->foreignId('employee_id')->nullable()->constrained(
+                table: 'employees', indexName: 'users_employee_id');
         });
     }
 
@@ -25,6 +27,10 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->dropForeign('users_role_id');
             $table->drop('role_id');
+        });
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropForeign('users_employee_id');
+            $table->drop('employee_id');
         });
     }
 };
