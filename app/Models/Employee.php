@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Employee extends Model
 {
     protected $table = 'employees';
-    protected $fillable = ['name', 'lastname', 'email', 'document', 'phone_number', 'status', 'employee_id', 'work_role_id'];
+    protected $fillable = ['name', 'lastname', 'email', 'document', 'phone_number', 'status', 'work_role_id'];
     //has one work role
     public function work_role(): BelongsTo
     {

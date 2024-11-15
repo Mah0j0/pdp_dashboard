@@ -1,4 +1,3 @@
-
                <div class="bg-indigo-600 px-8 pt-10 lg:pt-14 pb-16 flex justify-between items-center mb-3">
                   <!-- title -->
                   <h1 class="text-x1 text-white p-6">Project</h1>
@@ -8,7 +7,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -31,7 +30,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -54,7 +53,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -77,7 +76,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -369,4 +368,6 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>
+        </div>
+    </div>
