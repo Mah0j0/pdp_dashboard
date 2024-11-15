@@ -25,4 +25,9 @@ class Employee extends Model
     {
         return $this->hasMany(Reservation::class);
     }
+    //belongd to one user
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
