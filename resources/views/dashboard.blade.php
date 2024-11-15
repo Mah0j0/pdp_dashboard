@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>Titulo</title>
+    <link rel="stylesheet" href="../path/to/flowbite/dist/flowbite.min.css">
+    <title>Pation de Piedra Dashboard</title>
     <style>
         .card {
         position: relative;
@@ -66,25 +67,20 @@
         padding-right: 1rem;
         font-size: 1.125rem;
         }
-    </style>
+    </style> 
 </head>
 <body class="dark:bg-gray-900">
-    @include('components.nav')
-    @include('components.sidebar')
+    @include('components.nav', ['user_name' => $user_name, 'user_email' => $user_email])
+    @include('components.sidebar', ['role_id' => $role_id])
 
     <div class="p-4 sm:ml-64">
-        <h1>Bienvenido usuario</h1>
-        <p>Tu rol es: {{ $role_id }}</p>
         @include('content')
     </div>
 
     
     <!-- Scripts -->
-    <script>
-    document.getElementById('toggle-dark-mode').addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-    });
-    </script> 
+    <script src="./js/dark-mode-toggle"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

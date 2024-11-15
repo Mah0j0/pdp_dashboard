@@ -31,8 +31,10 @@ class AuthenticatedSessionController extends Controller
         // Obtener el rol del usuario autenticado
         $user = Auth::user();
         $role_id = $user->role_id; 
-
-        return redirect()->intended(route('dashboard', ['role_id' => $role_id], absolute: false));
+        $user_name = $user->name;
+        $user_email = $user->email;
+        //create uri for the redirect 
+        return redirect()->intended(route('dashboard', ['role_id' => $role_id, 'user_name' => $user_name, 'user_email' => $user_email], absolute: false)); //absolute: false para que no se redirija a la url completa
     }
 
     /**
