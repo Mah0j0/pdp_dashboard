@@ -19,7 +19,7 @@ class CreateClientsTable extends Migration
             $table->string('lastname')->nullable();
             $table->string('email')->nullable();
             $table->integer('document')->nullable();
-            $table->integer('phone_numbers')->nullable();
+            $table->integer('phone_number')->nullable();
             $table->string('special_requests')->nullable();
             $table->tinyInteger('status')->default(1);
             //fk para la tabla coutries

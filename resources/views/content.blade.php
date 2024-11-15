@@ -8,7 +8,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -31,7 +31,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -54,7 +54,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
@@ -77,7 +77,7 @@
                     <!-- card -->
                     <div class="card shadow dark:bg-gray-800 dark:text-gray-100">
                         <!-- card body -->
-                        <div class="card-body dark:bg-gray-800 dark:rounded-md">
+                        <div class="card-body rounded-md dark:bg-gray-800 dark:rounded-md">
                             <!-- content -->
                             <div class="flex justify-between items-center">
                                 <h4 class="dark:text-gray-100">Projects</h4>
