@@ -36,6 +36,7 @@ class ClientSeeder extends Seeder
             $lastname = $faker->lastName();
             
             DB::table('clients')->insert([
+                'code' => $faker->unique()->numberBetween(1000, 9999),
                 'name' => $name,
                 'lastname' => $lastname,
                 'email' => strtolower($name) . '.' . strtolower($lastname) . '@' . $faker->freeEmailDomain,
