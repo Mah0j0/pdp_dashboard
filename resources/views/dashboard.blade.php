@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="../path/to/flowbite/dist/flowbite.min.css">
-    <title>Pation de Piedra Dashboard</title>
+    <title>Patio de Piedra Dashboard</title>
     <style>
         .card {
         position: relative;
@@ -74,7 +74,7 @@
     @include('components/sidebar', ['role_id' => $role_id])
 
     <div class="p-4 sm:ml-64">
-        @include('content')
+        @include('general-content')
     </div>
     <!-- Scripts -->
     <script src="./js/dark-mode-toggle"></script> 

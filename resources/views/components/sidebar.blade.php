@@ -11,7 +11,7 @@
                 </a>
             </li>
             
-            @if(in_array($role_id, [1, 2, 3]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Administrador', 'Recepcionista']))
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
@@ -22,7 +22,7 @@
             </li>
             @endif
 
-            @if(in_array($role_id, [1, 2, 3]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Administrador', 'Recepcionista']))
             <li>
                 <a href="{{ route('clients.index') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -33,7 +33,7 @@
             </li>
             @endif
 
-            @if(in_array($role_id, [1, 2, 3]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Administrador', 'Recepcionista']))
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
@@ -44,7 +44,7 @@
             </li>
             @endif
 
-            @if(in_array($role_id, [1, 2, 3]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Administrador', 'Recepcionista']))
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
@@ -54,7 +54,7 @@
                 </a>
             </li>
             @endif
-            @if(in_array($role_id, [1, 2]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Administrador']))
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
@@ -64,7 +64,7 @@
                 </a>
             </li>
             @endif
-            @if(in_array($role_id, [2,5]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Marketing']))
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
@@ -74,7 +74,7 @@
                 </a>
             </li>
             @endif
-            @if(in_array($role_id, [2,4]))
+            @if(in_array(Auth::user()->role->nombre, ['Gerente', 'Contabilidad']))
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
@@ -86,7 +86,7 @@
             @endif
         </ul>
         <ul class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
-            @if(in_array($role_id, [2]))
+            @if (Auth::user()->role->nombre === 'Gerente')
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">

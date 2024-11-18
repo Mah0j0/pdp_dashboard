@@ -22,6 +22,4 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 //CLIENTES
-//clien resource index
-
 Route::resource('clients', ClientController::class);

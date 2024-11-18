@@ -10,11 +10,26 @@ class ClientController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        // Get all clients from the database
+        // Obtener los parámetros de la URL
+        $role_id = $request->query('role_id');
+        $user_name = $request->query('user_name');
+        $user_email = $request->query('user_email');
+
+        // Verifica si se ha pasado el filtro de estado
+        $status = $request->query('status');
+
+        if (isset($status)) {
+            // Filtra los clientes según el estado
+            $clients = Client::where('status', $status)->get();
+        } else {
+        // Obtiene todos los clientes si no se pasa el filtro
         $clients = Client::all();
-        return view('clients-index', compact('clients'));
+        }
+    
+        // Pasar los datos adicionales a la vista
+        return view('clients/clients-index', compact('clients', 'role_id', 'user_name', 'user_email'));
     }
 
     /**
